@@ -1,0 +1,102 @@
+@import "libs";
+@import "global";
+.weight {
+  &__inner {
+    position: relative;
+  }
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 50px;
+  }
+  &__btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    svg {
+      color: #fff;
+      font-size: 30px;
+    }
+  }
+  &__input {
+    font-family: "Shippori Antique B1", sans-serif;
+    margin-bottom: 100px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    margin-right: 10px;
+  }
+  &__item {
+    width: 100%;
+    margin: 30px 0;
+    padding: 20px 50px;
+    border-radius: 10px;
+    text-align: left;
+    &:nth-child(1) {
+      background-color: rgb(255, 196, 0);
+    }
+    &:nth-child(2) {
+      background: rgb(0, 178, 248);
+    }
+    &:nth-child(3) {
+      background-color: rgb(23, 233, 23);
+    }
+    &:nth-child(4) {
+      background-color: rgb(231, 49, 49);
+    }
+  }
+  &__link {
+    color: #fff;
+  }
+  &__error {
+    position: absolute;
+    top: 150px;
+    font-size: 24px;
+    left: 0;
+    right: 0;
+    transform: translateY(-600%);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    text-transform: uppercase;
+    &.active {
+      transform: translateY(50%);
+      opacity: 1;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .weight {
+    &__item {
+      width: 80%;
+      margin: 30px auto;
+      padding: 20px 10px;
+    }
+    &__input {
+      width: 100%;
+      margin: 0 auto 100px;
+      padding: 5px 10px;
+    }
+    &__error {
+      font-size: 18px;
+      &.active {
+        transform: translateY(50%);
+      }
+    }
+  }
+}
+@media (max-width: 330px) {
+  .weight {
+    &__error {
+      font-size: 18px;
+      &.active {
+        transform: translateY(200%);
+      }
+    }
+  }
+}

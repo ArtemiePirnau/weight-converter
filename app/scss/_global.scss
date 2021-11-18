@@ -1,0 +1,47 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(78, 81, 107);
+  color: #fff;
+  font-family: "Shippori Antique B1", sans-serif;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+p {
+  margin: 0;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+i,
+svg,
+g {
+  pointer-events: none;
+}
